@@ -1,0 +1,13 @@
+Package: SQE
+Title: Sorghum QTL effects (in BCNAM populations - draft)
+Version: 0.0.0.9000
+Authors@R: person('Vincent', 'Garin', email = 'vincent.garin6@gmail.com', role = c('cre', 'aut'), comment = c(ORCID = '0000-0002-5571-1841'))
+Description: Application to get parental QTL allelic effects estimated in different (multi-environment) sorghum experiments.
+License: Apache License (>= 2)
+Imports: 
+    config (>= 0.3.1),
+    golem (>= 0.3.5),
+    shiny (>= 1.7.3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
