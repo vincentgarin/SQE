@@ -1,12 +1,10 @@
 SQE: Sorghum QTL effects estimated in different (multi-environment) sorghum experiments (draft).
 ====
 
-<!--  
 <p align="center">
-  <img src="inst/app/www/hex-PMapp.png" width="350" >
+  <img src="inst/app/www/hex-SQE.png" width="350" >
 </p>
 
--->
 
 ## Overview
 
