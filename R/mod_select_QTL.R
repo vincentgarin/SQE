@@ -104,13 +104,13 @@ mod_select_QTL_server <- function(id){
     cM_low <- reactive({input$cM_low})
     cM_up <- reactive({input$cM_up})
     dist_crit <- reactive({input$dist_crit})
-    R2 <- reactive({input$R2})
+    R2_lim <- reactive({input$R2})
 
     Q_list <- eventReactive(input$click, {
       QTL_candidates_wrapper(DB = DB, trait_id = trait_id(), chr_id = chr_id(),
                              dist_crit = dist_crit(),
                              bp_low = bp_low(), bp_up = bp_up(),
-                             cM_low = cM_low(), cM_up = cM_up(), R2 = R2())})
+                             cM_low = cM_low(), cM_up = cM_up(), R2 = R2_lim())})
 
     QTL_id <- reactive({unlist(Q_list()$Q_sign[, 1])})
 

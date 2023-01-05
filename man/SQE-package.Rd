@@ -8,6 +8,14 @@
 \description{
 Application to get parental QTL allelic effects estimated in different (multi-environment) sorghum experiments.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/vincentgarin/SQE}
+  \item Report bugs at \url{https://github.com/vincentgarin/SQE/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Vincent Garin \email{vincent.garin6@gmail.com} (\href{https://orcid.org/0000-0002-5571-1841}{ORCID})
 
