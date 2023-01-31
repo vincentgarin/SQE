@@ -10,21 +10,21 @@ QTLxEC_projection <- function(DB, QTL_id, pop_id = 'GR2012', d_thre = 1.301,
 
   n_year <- length(year_range)
 
-  unit_lk <- c('[dd]', '[cm]', '[cm]', '[cm]', '[g]', '[kg/ha]') # need to be defined at a higher level (later)
-  names(unit_lk) <- c('FLAG', 'PH', 'PAN', 'PED', 'GWGH', 'YIELD')
-
-  tr_nm_ext <- c('Flag leaf', 'Plant height', 'Panicle length', 'Peduncle length',
-                 'Grain weight', 'Grain yield')
-  names(tr_nm_ext) <- c('FLAG', 'PH', 'PAN', 'PED', 'GWGH', 'YIELD')
-
-  EC_ref <- c('rain', 'hum', 'VPD', 'SPV', 'ETP', 'PETP', 'Tmin', 'Tmax',
-              'Trange', 'DD', 'FRUE', 'hSun', 'photoperiod', 'solarRad', 'photothermal')
-
-  c_EC <- paste0(EC_ref, "_sign")
-  c_M <- c("pop", "par", "log10_main", "log10_QxE")
-
-  EC_fct_lk <- c('sum', rep('mean', 8), 'sum', 'mean', 'sum', 'mean', 'sum', 'sum')
-  names(EC_fct_lk) <- EC_ref
+  # unit_lk <- c('[dd]', '[cm]', '[cm]', '[cm]', '[g]', '[kg/ha]') # need to be defined at a higher level (later)
+  # names(unit_lk) <- c('FLAG', 'PH', 'PAN', 'PED', 'GWGH', 'YIELD')
+  #
+  # tr_nm_ext <- c('Flag leaf', 'Plant height', 'Panicle length', 'Peduncle length',
+  #                'Grain weight', 'Grain yield')
+  # names(tr_nm_ext) <- c('FLAG', 'PH', 'PAN', 'PED', 'GWGH', 'YIELD')
+  #
+  # EC_ref <- c('rain', 'hum', 'VPD', 'SPV', 'ETP', 'PETP', 'Tmin', 'Tmax',
+  #             'Trange', 'DD', 'FRUE', 'hSun', 'photoperiod', 'solarRad', 'photothermal')
+  #
+  # c_EC <- paste0(EC_ref, "_sign")
+  # c_M <- c("pop", "par", "log10_main", "log10_QxE")
+  #
+  # EC_fct_lk <- c('sum', rep('mean', 8), 'sum', 'mean', 'sum', 'mean', 'sum', 'sum')
+  # names(EC_fct_lk) <- EC_ref
 
   # Check what kind of QTL effects we have
   d_q <- DB[QTL_un_id == QTL_id & pop == pop_id & !is.na(effect)]
